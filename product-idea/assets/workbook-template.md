@@ -73,7 +73,12 @@ _[Solution-free. Includes: actor + outcome gap + a key cause + problem size (1�
 - **Trend & why:** _[growing/flat/declining + reason]_
 
 ### 2.2 Total Addressable Market (TAM)
-_[Complete AFTER pricing (4.2). Revenue: #actors × avg price × avg purchases/year. Units: #actors × purchases/year. Annual basis. Segmented pricing → use middle or average price.]_
+_[Complete AFTER pricing (4.2). Count in units of the pricing metric, not in people: purchasing units = #actors (2.1) × pricing-metric units per actor. Units per actor = 1 for per-user pricing where the actor holds the account; 1 ÷ (avg actors per unit) for per-family, per-household or per-organization pricing; usage per actor per year for usage/output metrics. Revenue: purchasing units × avg price per unit × avg purchases/year per unit. Units: purchasing units × purchases/year. Annual basis. Segmented pricing → convert every tier to the same metric, then use middle or average price.]_
+- **# actors (from 2.1):**
+- **Pricing metric (from 4.2) → units per actor:** _[factor + source, e.g. per household, 1 ÷ 1.6 parents per household]_
+- **Purchasing units:**
+- **TAM (revenue/yr):**
+- **TAM (units/yr):**
 
 ### 2.3 Market Segmentation
 _[Divide the market with segmentation variable(s)+values. The SAME variables across all segments. Categories: behavioral, demographic, firmographic, geographic, psychographic. 6 rules: homogeneous, distinctive, measurable, substantial, actionable, accessible.]_
