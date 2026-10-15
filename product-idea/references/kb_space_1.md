@@ -543,7 +543,7 @@ Alternative business terms: **Usage Occasion** (CPG), **Scenario / Operational S
 > **Method 1 (Per instance):** Gap = `[Desired value]` − `[Actual value]` per JTBD instance.
 > **Method 2 (Annualized per actor):** `[per-instance gap]` × `[JTBD frequency/year]`.
 > **Method 3 (Total impact):** `[per-instance gap]` × `[frequency/year]` × `[# Actors]`.
-> **Method 4 (Monetary):** `[problem size]` × `[$ per unit, e.g., wage/hour]`.
+> **Method 4 (Monetary):** `[problem size]` × `[$ per unit, e.g., wage/hour]`. For an annual total across all Actors, `[problem size]` is the Method 3 total impact (or the Method 2 per-actor size × `[# Actors]`); the Method 2 size alone gives $ per Actor per year. Convert units first (minutes → hours for an hourly wage).
 > **Method 5 (Rate of change):** `[% change/year]` applied to any size above.
 
 **Estimation-logic template** (when the number doesn't match your Actor): state related data + assumptions + logic + cited source.
@@ -552,8 +552,8 @@ Alternative business terms: **Usage Occasion** (CPG), **Scenario / Operational S
 **Airport security (JTBD = get through security checkpoint):**
 - *Per instance:* Actual 20–25 min, Desired 5 min → **Gap = 15–20 min/check.**
 - *Annualized per actor:* 15–20 min × **3.6 flights/yr** = **54–72 min/passenger/yr.**
-- *Total impact:* 15–20 min × 3.6 × **151M passengers** = **8.2B–10.9B minutes/yr** (≈137M–181B hours across all passengers).
-- *Monetary:* 54–72 min/passenger/yr × $30/hr average wage → **≈$23B/yr** cost of inaction.
+- *Total impact:* 15–20 min × 3.6 × **151M passengers** = **8.2B–10.9B minutes/yr** (÷ 60 = **≈136M–181M hours/yr** across all passengers).
+- *Monetary:* 54–72 min/passenger/yr = 0.9–1.2 hrs/passenger/yr × $30/hr average wage = $27–$36/passenger/yr; × **151M passengers** = **≈$4.1B–$5.4B/yr** cost of inaction (same as 136M–181M hours × $30/hr).
 - *Rate of change:* +12%/yr passengers → time-in-line rising each year.
 
 **Language learning (constant frequency):** Ave. 400 study hours/yr per learner × **1.5B new learners globally** = **600B total study hours/yr.**
