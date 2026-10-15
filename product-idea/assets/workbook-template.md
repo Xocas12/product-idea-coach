@@ -91,8 +91,8 @@ _[Create ≥3 segment profiles. Each: name, variable(s), value(s), # actors, gro
 _[≥3 options the Actor perceives available: ≥1 product CATEGORY (with 2–3 example products) and ≥1 named PRODUCT (brand + company). Note direct vs indirect/substitutes.]_
 
 ### 2.6 Positioning Analysis
-- **Evaluation criteria (customer's):** _[the factors customers use to choose]_
-- **Current State Positioning Map:** _[options scored 0–10 on each criterion; identify white-space gaps]_
+- **Evaluation criteria (customer's):** _[the factors customers use to choose, each with its preferred direction: more is better or less is better]_
+- **Current State Positioning Map:** _[options scored 0–10 on each criterion by amount offered; white space = a more-is-better criterion where all options score low, or a less-is-better criterion where all score high]_
 - **Future State Positioning Map:** _[add your product idea + the position(s) to own]_
 - **Position-to-Own (statement):** _[clear, concise phrase emphasizing 1–2 key positions]_
 

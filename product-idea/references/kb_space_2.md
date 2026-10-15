@@ -357,6 +357,8 @@ Also called **perceptual map, "snake plot"/"snake chart," or Strategy Canvas** (
 
 - **WHITE SPACE** = an **unfilled position** in customers' minds — a possible position to occupy, differentiate on, and "own."
 - **WARNING: High ≠ good, Low ≠ bad.** Some customers prefer **less** of a criterion (less screen size, fewer features, lower price). Score the *amount offered*, not "goodness."
+- **Record each criterion's preferred direction** next to it on the map: **more is better** (quality, variety, most outcomes) or **less is better** (price, effort, decision time, steps, wait). The direction is the customer's, not yours.
+- **Finding white space is relative to that direction.** A criterion is white space when **no incumbent offers the level the customer wants**: every incumbent scores **low** on a more-is-better criterion, or every incumbent scores **high** on a less-is-better one. *Example:* a time-saving product with the criterion "Effort required" (less is better), scored as effort demanded. Incumbents at 8/6/7 leave the gap; incumbents at 2/2/2 already serve the customer, and that criterion is **not** white space even though every score is low.
 
 **Positioning guidance:**
 - Identify the **most noteworthy competitors** (direct and/or indirect): which options do customers choose most often? which is most economical? which is emerging?
@@ -382,9 +384,11 @@ STEP 4 — Current-state map:
   X-axis = criteria above; Y-axis = 0–10 (relative amount offered)
   Options (≥3; ≥1 category + ≥1 product):  Option A ______  Option B ______  Option C ______
   Score matrix:            crit1 crit2 crit3 …
+     Preferred direction    __    __    __   (more is better / less is better)
      Option A               __    __    __
      Option B               __    __    __
   White spaces (green ovals): ________________
+     (more-is-better criteria where ALL options score low; less-is-better criteria where ALL score high)
 STEP 5 — Future-state map: add [Your Product] line; circle position(s)-to-own.
 POSITION-TO-OWN statement (clear, concise, 1–2 positions): "________________________"
 ```
@@ -397,6 +401,7 @@ POSITION-TO-OWN statement (clear, concise, 1–2 positions): "__________________
 ### (e) Common mistakes
 - **Product-centric perspective** (biggest mistake) — scoring on *your* differentiators instead of the customer's criteria.
 - Treating **High as good / Low as bad** (ignoring customers who want *less*).
+- Calling every all-low criterion white space: on a less-is-better criterion (price, effort, time) all-low means incumbents already serve the customer, and the gap is where they all score high.
 - Confusing a **white space** with **proven demand** ("a gap in the market ≠ a market for the gap").
 - Forcing your not-yet-real features onto the **current-state** map.
 - Choosing **too many** positions-to-own (each one costs investment).
@@ -406,7 +411,7 @@ POSITION-TO-OWN statement (clear, concise, 1–2 positions): "__________________
 ### (f) Coaching questions
 1. List the criteria the Actor *actually* uses to choose — not your feature list. Where did you get them?
 2. Score each option 0–10 on each criterion. Are you scoring *amount offered*, remembering low can be attractive?
-3. Where are the white spaces — the criteria on which every incumbent scores low?
+3. Where are the white spaces — the criteria where no incumbent offers the level the customer wants? That is every incumbent scoring low on a more-is-better criterion, or every incumbent scoring high on a less-is-better one (price, effort, time).
 4. Which 1–2 of those gaps can you genuinely own, and why is that your strongest differentiation?
 5. Write your position-to-own in one crisp line — would a customer instantly get it?
 6. Does owning this position require an innovation that would change the criteria customers use?
@@ -761,7 +766,7 @@ Actor + JTBD (from Problem Space)
 - **The same variables across all segments; memorable names.** "Express Shoppers," "Immersive Storytellers," "The Worriers" — named, comparable, one variable set with only values changing.
 - **Multi-variable segmentation then convergence to ONE focus segment** with an explicit size + competition rationale (one strong workbook converges on a 60M "Express Shoppers" segment; another uses a clean 2-variable matrix — delay severity × family size — then picks the largest low-barrier segment).
 - **Competition mapped by category/substitution, not a flat list** — Direct hosts vs. DIY editors vs. file-hosting hacks (one podcast-tool exemplar); Hardware-only vs. Software-only vs. Combined (one EV-charging exemplar).
-- **Positioning by gap-hunting:** score incumbents on the customer's criteria, then claim the 1–2 axes where **all** incumbents score low (one exemplar → Ease of Use + Audio Editing; another → price + long-term value; a third → charger availability + route updates + accurate range). Current-state **and** future-state maps on the *same* axes.
+- **Positioning by gap-hunting:** score incumbents on the customer's criteria (amount offered), mark each criterion's preferred direction, then claim the 1–2 axes where **no** incumbent offers what the customer wants: **all** score low on a more-is-better axis, or **all** score high on a less-is-better one (one exemplar → Ease of Use + Audio Editing, both more-is-better with every incumbent low; another → price, less-is-better with every incumbent priced high, + long-term value, more-is-better with every incumbent low; a third → charger availability + route updates + accurate range, all more-is-better with every incumbent low). Current-state **and** future-state maps on the *same* axes.
 - **A crisp, single-sentence Position-to-Own** naming the target customer **and** the differentiators (one strong exemplar: *"premier choice among Hispanic patients in the U.S. for dental medical tourism, distinguished by exceptional safety and competitive pricing."*).
 - **Aligned Market Focus + focused MVP:** the segment/niche/use-case/problem/position all reinforce one story, and v1.0 is deliberately scoped (one exemplar's beachhead = US Tesla BEVs; Stripe-style single first use case). Scope discipline — explicitly listing what is **deferred** to v2/v3.
 - **A golden thread:** the same 2–3 core numbers recur across Problem, Market, Solution, and Value so the whole workbook reconciles as one argument.
