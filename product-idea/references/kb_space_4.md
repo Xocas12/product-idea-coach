@@ -547,7 +547,7 @@ Three sample opening paragraphs for **"PM Genie, an AI-powered copilot for produ
 
 **Strong (do this):**
 - **Golden-thread consistency.** The best workbooks pick 2–3 core numbers early (e.g., 8→4 steps, $32/hr wage, 40 units/yr) and **reuse them verbatim** across benefits, value, pricing, and TAM so the whole Space reconciles as one argument.
-- **Benefits tied to the outcome gap and quantified in both time and dollars,** using **conservative, sourced assumptions** (a strong exemplar carried one dollar figure — $1,664/yr and 68 hrs saved — verbatim, explicitly lower-bound → credible ROI).
+- **Benefits tied to the outcome gap and quantified in both time and dollars,** using **conservative, sourced assumptions** (a strong exemplar carried one dollar figure and one hours figure verbatim — 68 hrs saved/yr, and $1,664/yr = 52 hrs × $32/hr, i.e. only 52 of the 68 hrs monetized, which is what makes the dollar figure an explicit lower bound → credible ROI). When the dollar and hours figures differ, show which hours are monetized and at what rate, so a reader can get from one to the other..
 - **Value-based pricing done properly:** estimate per-tier perceived value, capture ~¼ (within the 10–30% rule), round to competitive prices, and **justify every deviation** (several strong exemplars).
 - **Costs treated as full TCO,** including time/effort and switching, with time monetized (a strong exemplar costed 115 min of onboarding at $25/hr = $47.92).
 - **Segmented tiers mapped 1:1 to willingness-to-pay,** each tier's contents justified (a strong exemplar used free-for-students / premium-for-workers / live-expert-for-elderly tiers).

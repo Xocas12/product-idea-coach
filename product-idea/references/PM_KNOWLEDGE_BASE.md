@@ -132,7 +132,7 @@ The four Spaces are not four documents — they are four passes over **one produ
 - The **root cause** (Space 1) is what the **MVP features** (Space 3) must address and what the **position-to-own** (Space 2) differentiates on.
 - The **desired outcome metric** (Space 1) is the **design/build target** for requirements (Space 3) and the **benefit** quantified in dollars (Space 4).
 
-Exemplar proof: a strong workbook reuses `8 steps → 4 target`, `~40 episodes/yr`, and `$32/hr` across problem, MVP "how it works," requirements, pricing, and value — so the whole workbook reconciles as one argument (`$1,664/yr, 68 hrs saved`). The weakest workbooks break the thread somewhere — a market count that drifts 2M→2.5M→3M between sections, a TAM priced at $10 while the product prices at $20, a metric introduced then dropped.
+Exemplar proof: a strong workbook reuses `8 steps → 4 target`, `~40 episodes/yr`, and `$32/hr` across problem, MVP "how it works," requirements, pricing, and value — so the whole workbook reconciles as one argument (`68 hrs saved/yr`; `$1,664/yr = 52 hrs × $32/hr`, a lower bound that monetizes only 52 of the 68 hrs). The weakest workbooks break the thread somewhere — a market count that drifts 2M→2.5M→3M between sections, a TAM priced at $10 while the product prices at $20, a metric introduced then dropped.
 
 **Each Space narrows the previous one's aperture:**
 1. Problem Space opens wide (a whole Fertile Land) then narrows to **one measurable gap**.
