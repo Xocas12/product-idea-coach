@@ -73,7 +73,7 @@ _[Solution-free. Includes: actor + outcome gap + a key cause + problem size (1�
 - **Trend & why:** _[growing/flat/declining + reason]_
 
 ### 2.2 Total Addressable Market (TAM)
-_[Complete AFTER pricing (4.2). Revenue: #actors × avg price × avg purchases/year. Units: #actors × purchases/year. Annual basis. Segmented pricing → use middle or average price.]_
+_[Complete AFTER pricing (4.2). Revenue: #actors × avg price × avg purchases/year. Units: #actors × purchases/year. Annual basis. Segmented pricing with tiers mapped to segments → TAM = Σ over tiers (segment # actors × tier price × purchases/year), i.e. a size-weighted price. Weights = segment sizes from 2.4, NOT conversion rates (a conversion mix makes it SAM/SOM). Fallback only if segment sizes are unknown: middle or average tier price, labelled as an assumption.]_
 
 ### 2.3 Market Segmentation
 _[Divide the market with segmentation variable(s)+values. The SAME variables across all segments. Categories: behavioral, demographic, firmographic, geographic, psychographic. 6 rules: homogeneous, distinctive, measurable, substantial, actionable, accessible.]_
