@@ -42,7 +42,7 @@ Carry Actor + JTBD forward → define the **Market** (name it, count the Actors,
 **Generate** many ideas then converge on one → write the **Product Concept Outline** (9 parts: name, purpose, category+evidence, attributes, deliverables, I/O, infrastructure, data) → draw **User Views** (a disciplined Happy-Path: no login/error clutter, explicit entry + completion) → derive product **Features** and write **Functional Requirements** as user stories (singular, unambiguous, verifiable, ID'd, valuable, solution-free) → draw the **Context View** (external entities + labeled/directed data) → specify **Non-Functional Requirements** across the course's 9 quality attributes at the right level/threshold. Result = the **PRD**.
 
 **SPACE 4 — CUSTOMER VALUE** *(is the offer compelling?)*
-Build the **Features→Benefits** table (feature ≠ benefit; quantify ≥1) → sum to **Customer Value** tied to the outcome gap (in time and $) → enumerate **Customer Costs / TCO** across acquire/use/have/dispose (price is just cost #1) → set the **Pricing Model** (strategy, metric, price ≈10–30% of value, payment structure) → run the **Value-Proposition Evaluation** (BCR vs. friction threshold; apply levers if weak) → compute the **TAM** (deferred to the last assignment; `Actors × price × purchases/yr`) → write the 2-page, jargon-free **Product Idea Brief** that rolls up all 17 elements.
+Build the **Features→Benefits** table (feature ≠ benefit; quantify ≥1) → sum to **Customer Value** tied to the outcome gap (in time and $) → enumerate **Customer Costs / TCO** across acquire/use/have/dispose (price is just cost #1) → set the **Pricing Model** (strategy, metric, price ≈10–30% of value, payment structure) → run the **Value-Proposition Evaluation** (BCR vs. friction threshold; apply levers if weak) → compute the **TAM** (deferred to the last assignment; `purchasing units × price × purchases/yr`, with Actors converted to units of the pricing metric) → write the 2-page, jargon-free **Product Idea Brief** that rolls up all 17 elements.
 
 **Two deliberately deferred artifacts:** the **TAM** (Space 4) and the **Product Idea Brief** are completed at the very end of the course, because both require the full workbook to be in place.
 
@@ -100,7 +100,7 @@ Each row: a concept consumes upstream artifacts and produces the input(s) the ne
 | Customer Costs / TCO | MVP/Solution, Pricing (price = cost #1) | total cost figure → **BCR denominator** + friction signals |
 | Pricing Model | Customer Value (value-based), Competition (reference), differentiators | the **price** → cost item #1, BCR input, **TAM** input |
 | Value-Prop Evaluation (BCR) | Customer Value, Costs/TCO, Price, friction signals | the compellingness verdict + levers → Brief's value section |
-| TAM *(deferred)* | Market size / # Actors, average price | annual market opportunity (units + $) → Brief's market section |
+| TAM *(deferred)* | Market size / # Actors, average price, pricing metric (Actors → purchasing units) | annual market opportunity (units + $) → Brief's market section |
 | Product Idea Brief *(last)* | every prior Space | the 2-page executive go/no-go proposal |
 
 ---

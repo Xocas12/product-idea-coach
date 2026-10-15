@@ -367,7 +367,7 @@ Defines **when** and **how** a customer pays (a.k.a. payment terms), whereas the
 
 ### (g) Inputs → Outputs
 - **Consumes:** Customer Value (§3, for value-based pricing), Competition/Positioning (Market Space, for reference pricing), differentiators.
-- **Produces:** the **price** (cost item #1 in §4), the input the **BCR (§6)** needs, and the **average price** the **TAM (§7)** requires.
+- **Produces:** the **price** (cost item #1 in §4), the input the **BCR (§6)** needs, and the **average price** and **pricing metric** the **TAM (§7)** requires (the metric sets the unit the TAM counts in).
 
 ---
 
@@ -447,38 +447,53 @@ The **TAM** (a.k.a. Total Available Market) is *the overall sales opportunity av
 - **TAM is always annual.**
 - **Your TAM ($) is not the same as a competitor's** unless it's the same price aimed at the same market (TAM is price-dependent).
 - Requires your **pricing model** — you can't compute the monetary TAM without a price.
+- **Count in units of the pricing metric, not in people.** The Market Space counts Actors, and Actors are people. The price is charged per unit of the pricing metric (§5.2), and that unit is often not one Actor: per family or household, per organization or site, per conversation. Convert before you multiply: **purchasing units = no. Actors × pricing-metric units per Actor.**
+  - **Per-user / per-member pricing where the Actor holds the account:** units per Actor = **1**, so purchasing units = Actors.
+  - **Per family, household, organization or site:** units per Actor = **1 ÷ (avg Actors per unit)**, a fraction. 12M parents at 1.6 parents per household = 7.5M households.
+  - **Usage, output or outcome metrics:** units per Actor = the metric's **usage per Actor per year** (Agentforce below: 20 × 260 = 5,200 conversations per rep).
+  - **Per seat bought by the Actor for other people** (a manager buying seats for a team): units per Actor = avg seats bought per Actor, which can be more than 1.
+  - State the factor and its source next to the TAM. It is the only allowed difference between the Market Space count and the TAM count.
 
 ### (c) Template / format — the two formulas
 > **Monetary TAM:**
-> `TAM ($) = (no. customers/Actors in your market) × (avg price of your offering) × (avg no. purchases/year per customer)`
+> `TAM ($) = (no. purchasing units in your market) × (avg price per unit of the pricing metric) × (avg no. purchases/year per unit)`
 >
 > **Units TAM:**
-> `TAM (units) = (no. customers/Actors in your market) × (no. purchases they can make in one year)`
+> `TAM (units) = (no. purchasing units in your market) × (no. purchases per unit in one year)`
+>
+> where `no. purchasing units = (no. Actors in your market, from the Market Space) × (pricing-metric units per Actor)`.
+>
+> "Purchases/year" is how many times the stated price is paid for one unit in a year (12 for a price quoted per month, 1 for a yearly price or a one-time purchase). When the price is per user and the Actor is the user, units per Actor = 1 and the formula is the course's `Actors × avg price × purchases/year`.
 >
 > **Under a segmented (tiered) pricing strategy**, use a *good-enough* price:
 > **(1) use the middle price**, **OR (2) calculate the average price** across tiers.
+> **Convert every tier to the same pricing metric first.** A per-family tier mixed into per-member tiers is not averageable as listed: divide the family price by the average Actors on a family plan. Duolingo (§5.4): Free $0 and Super $6.99 are per member, Super Family $9.99 is per family of up to 6. At a full family of six that is $9.99 ÷ 6 = $1.67 per member, so the average is (0 + 6.99 + 1.67) ÷ 3 = **$2.89 per member per month**. Averaging the listed prices, (0 + 6.99 + 9.99) ÷ 3 = $5.66, is about 2x high. The middle tier (Super, $6.99 per member) is already per member and needs no conversion.
 
 ### (d) Worked examples (from the decks)
 - **College students:** 207M students × $100 × 1 purchase/yr = **$20.7B/yr revenue = 207M units/yr.**
-- **Salesforce Agentforce:** 2.9M US customer-service reps × 20 conversations/rep/day × 260 workdays = 15.1B conversations/yr × $2.00 = **$30.2B/yr = 15.1B conversations/yr.**
+- **Salesforce Agentforce:** 2.9M US customer-service reps × 20 conversations/rep/day × 260 workdays = 15.1B conversations/yr × $2.00 = **$30.2B/yr = 15.1B conversations/yr.** The pricing metric is per conversation, so 20 × 260 = 5,200 conversations per rep per year is the units-per-Actor conversion, and each conversation is paid for once.
+- **Per household (illustrative numbers):** Actor = *Parents of toddlers*; the Market Space counts **12M parents**. The product costs **$8 per household per month**, and one plan covers both parents; households in the market average **1.6 parents** who are Actors (cite the household survey or census table you used). Purchasing units = 12M × (1 ÷ 1.6) = **7.5M households**. TAM ($) = 7.5M × $8 × 12 = **$720M/yr**; TAM (units) = **7.5M household plans/yr**. The unconverted 12M parents × $8 × 12 = $1.15B counts each household's plan once per parent and is 1.6x high.
+- **Per organization (illustrative numbers):** Actor = *Warehouse shift supervisor*; the Market Space counts **400K supervisors**. The product costs **$3,000 per warehouse site per year**, and sites average **8 supervisors**. Purchasing units = 400K ÷ 8 = **50K sites**. TAM ($) = 50K × $3,000 × 1 = **$150M/yr**; TAM (units) = **50K site licenses/yr**. The unconverted 400K × $3,000 = $1.2B is 8x high, off by the head count per site.
 
 ### (e) Common mistakes / anti-patterns
 - Computing TAM before the last assignment (against the explicit rule).
 - **Confusing TAM with a revenue forecast** — TAM assumes 100% market share; applying adoption %, conversion %, or market-share % turns it into SAM/SOM, not TAM. (Exemplar error: a weak exemplar multiplied the *entire* ~21.7M TAM by tier-conversion %, producing an unrealistic multi-billion-dollar "TAM" that was really a forecast; another labeled a 20%-adoption × 50%-conversion figure "TAM" when it's really SOM.)
 - Forgetting TAM is **annual**, or using a per-week/other period (a weak exemplar reported a "per week" TAM).
 - Using a price in the TAM that **contradicts the actual pricing tiers** (a weak exemplar's TAM used $10/yr while the product priced at $20/yr).
-- Not reconciling the customer count across sections (market-size figures drifting between sections is the single most common exemplar weakness).
-- For segmented pricing, using an arbitrary tier price instead of the middle or average price.
+- Not reconciling the customer count across sections (market-size figures drifting between sections is the single most common exemplar weakness). The Actor count in the TAM is the Market Space count; the purchasing-unit count may differ from it only by the stated units-per-Actor factor.
+- **Multiplying the Actor count by a price set per family, household or organization** — this overstates TAM by the number of Actors per unit (up to 6x for a family plan of six, 8x for a site with 8 Actors). The reverse slip, Actors × a per-seat price when each Actor buys several seats, understates it. Convert Actors to pricing-metric units first.
+- For segmented pricing, using an arbitrary tier price instead of the middle or average price, or averaging tiers priced on **different metrics** (per member and per family) without converting them to one metric.
 
 ### (f) Coaching questions
 1. How many Actors are in your market (doing the JTBD), and what's your source for that number?
-2. What's the average price of your offering (middle or average tier if segmented), and how many purchases per customer per year?
-3. Compute TAM both ways — units/year and revenue/year. Do they reconcile with your pricing model?
-4. Are you accidentally applying adoption/market-share % (that's SAM/SOM, not TAM)?
-5. Does the customer count here match the numbers you used in the Market Space and problem sizing?
+2. What's your pricing metric, and how many pricing-metric units does one Actor account for — 1 per user, 1 ÷ (Actors per family/household/organization), or a yearly usage count? What's the source for that factor?
+3. What's the average price per unit (middle or average tier if segmented, with every tier converted to the same metric), and how many purchases per unit per year?
+4. Compute TAM both ways — units/year and revenue/year. Do they reconcile with your pricing model?
+5. Are you accidentally applying adoption/market-share % (that's SAM/SOM, not TAM)?
+6. Does the Actor count here match the numbers you used in the Market Space and problem sizing, and does the purchasing-unit count follow from it through the stated units-per-Actor factor and nothing else?
 
 ### (g) Inputs → Outputs
-- **Consumes:** Market size / no. of Actors (Market Space), average price (Pricing Model §5).
+- **Consumes:** Market size / no. of Actors (Market Space), average price and pricing metric (Pricing Model §5), and the units-per-Actor factor that converts one into the other.
 - **Produces:** the **Market Opportunity (TAM)** element of the Product Idea Brief; the headline "is this big enough?" number for executives/investors.
 
 ---
@@ -552,7 +567,7 @@ Three sample opening paragraphs for **"PM Genie, an AI-powered copilot for produ
 - **Costs treated as full TCO,** including time/effort and switching, with time monetized (a strong exemplar costed 115 min of onboarding at $25/hr = $47.92).
 - **Segmented tiers mapped 1:1 to willingness-to-pay,** each tier's contents justified (a strong exemplar used free-for-students / premium-for-workers / live-expert-for-elderly tiers).
 - **A BCR (or explicit value ratio) matched to friction,** with named levers if weak.
-- **A TAM stated as an explicit annual formula** (`Actors × price × purchases/yr`), with segment sizes reconciling to the market total.
+- **A TAM stated as an explicit annual formula** (`purchasing units × price × purchases/yr`, with purchasing units = Actors × units per Actor), with segment sizes reconciling to the market total.
 
 **Weak (avoid this):**
 - **Numbers that drift between sections** — market/customer counts and prices that don't reconcile (one weak exemplar cited 60M vs. 150M and a "per week" TAM; another carried inconsistent 2M/2.5M/3M audience counts across sections). This is the single most common flaw.

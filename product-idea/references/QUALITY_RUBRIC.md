@@ -110,7 +110,7 @@
 3. **Customer Costs = full TCO** across acquire/use/have/dispose — including **time/effort and switching costs**, not just price. (Price is cost item #1.)
 4. **Pricing Model has all 4 elements** (strategy, metric, price, payment structure), price **derived** (value-based ≈10–30% of value; or a reference price adjusted for +/− differences), metric distinct from billing frequency.
 5. **Value-Prop Evaluation gives a BCR matched to the purchase's friction threshold** (3:1 low / 4–5:1 medium / 6–8:1 high / 10:1 very-high) with a verdict; if not compelling, names the lever to pull.
-6. **TAM (deferred to last assignment) stated as an annual formula** `Actors × avg price × purchases/yr`, **not** multiplied by adoption/conversion % (that's SAM/SOM), with the customer count reconciling to the Market Space.
+6. **TAM (deferred to last assignment) stated as an annual formula** `purchasing units × avg price per unit × purchases/yr`, where **purchasing units = Market Space Actors × pricing-metric units per Actor** (1 for per-user pricing; 1 ÷ Actors per family/household/organization for those metrics; usage per Actor for usage metrics), **not** multiplied by adoption/conversion % (that's SAM/SOM). The Actor count matches the Market Space, and the purchasing-unit count reconciles to it through the stated conversion factor (an Actor count multiplied by a per-family or per-organization price fails).
 7. **Product Idea Brief (last):** ≤2 pages, prose (no bullets/visuals), no PM jargon (except TAM/Outcomes), executive audience, all 17 elements present and numbers consistent.
 
 ### Top failure modes
@@ -131,7 +131,7 @@
 | Pricing | Derived: per-tier perceived value → capture ~¼ (10–30% rule) → round to competitive → justify every deviation *(strong exemplars)*; value-based worksheet `next-best + (+diffs) − (−diffs)`, even monetizing probabilistic risk *(a strong exemplar priced a 9% risk as −$100×9%)* | Price picked arbitrarily; tiers not tied to WTP; metric confused with billing frequency; competitor reference on a different metric |
 | Costs/TCO | Full TCO with time monetized *(a strong exemplar computed 115 min × $25/hr = $47.92)*; switching + soft costs named | Price only; complement's whole cost folded in *(a weak workbook)*; time/switching ignored |
 | Compellingness | BCR matched to friction with named levers if weak; emotional benefits counted with real signals | BCR with no friction match; "compelling" asserted with no ratio; inflated ratios (26:1–31:1) from implausible wage rates *(a weak workbook)* |
-| TAM | Explicit annual formula, segment sizes reconcile to market total, price matches the pricing model | Adoption/conversion % applied then called TAM; per-week TAM; price contradicts tiers; count drifts from Market Space |
+| TAM | Explicit annual formula, segment sizes reconcile to market total, price matches the pricing model; Actors converted to pricing-metric units with the factor stated (e.g., 12M parents ÷ 1.6 per household = 7.5M households) | Adoption/conversion % applied then called TAM; per-week TAM; price contradicts tiers; Actor count × a per-family/per-organization price; tiers on different metrics averaged as listed; count drifts from Market Space beyond the stated conversion |
 | Brief | Concise active prose, executive audience, 3 anchor numbers (TAM, problem size, key outcome) consistent throughout | Bullets/visuals/jargon; >2 pages; hype burying substance; numbers inconsistent with the workbook |
 
 ---
@@ -143,5 +143,5 @@
 3. **"Does the solution address the root cause AND why incumbents haven't?"** A solution that only asserts it fixes the cause is a red flag.
 4. **"Did any thread get dropped?"** Metrics, use cases, or actors introduced then never carried forward are a recurring weakness.
 5. **"Is this solution-free where it must be?"** Problem Statement and Functional Requirements must not specify the product/widget.
-6. **"Do the units line up all the way through?"** Minutes vs. hours, weeks vs. days, per-instance vs. per-year, TAM annual vs. per-week — unit slips destroy credibility even when the logic is sound.
+6. **"Do the units line up all the way through?"** Minutes vs. hours, weeks vs. days, per-instance vs. per-year, TAM annual vs. per-week, people vs. the pricing metric's unit (per family, per household, per organization) — unit slips destroy credibility even when the logic is sound.
 7. **"Would a skeptical executive believe it?"** The ultimate test for Space 4 and the Brief: benefits that dwarf costs, a BCR that clears its friction bar, and a TAM that isn't a disguised forecast.
