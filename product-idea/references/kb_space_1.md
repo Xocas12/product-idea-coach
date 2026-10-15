@@ -654,7 +654,7 @@ An effective Problem Statement includes exactly these **4 elements**:
 ### (d) Worked examples (from the course)
 **Template 1 (airport security):** "Airline passengers experience an average of **15–20 minutes more Time-In-Line per trip** than the best airports, because **current screening processes are slow and inefficient**. This leads to a cumulative **Time-In-Line of 54 to 72 minutes per passenger per year**. Addressing this problem will **reduce Time-In-Line to 5 minutes per trip**."
 
-**Template 4 (a strong exemplar, podcasting):** "**Podcasters** want to **create new episodes in 2 steps** but currently take an average of **8 steps per episode**, resulting in **160 extra steps per year for the average of 40 episodes** they create. This is primarily due to **too many applications to navigate when creating a podcast**. Addressing this issue would eliminate over **640M unnecessary steps each year collectively of all podcasters**."
+**Template 4 (a strong exemplar, podcasting):** "**Podcasters** want to **create new episodes in 4 steps** but currently take an average of **8 steps per episode**, resulting in **160 extra steps per year for the average of 40 episodes** they create. This is primarily due to **too many applications to navigate when creating a podcast**. Addressing this issue would eliminate over **640M unnecessary steps each year collectively of all podcasters**."
 
 *(Note how each contains all 4 elements — Actor, gap, key cause, size(s) — and names no product.)*
 
