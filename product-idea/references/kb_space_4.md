@@ -367,7 +367,7 @@ Defines **when** and **how** a customer pays (a.k.a. payment terms), whereas the
 
 ### (g) Inputs → Outputs
 - **Consumes:** Customer Value (§3, for value-based pricing), Competition/Positioning (Market Space, for reference pricing), differentiators.
-- **Produces:** the **price** (cost item #1 in §4), the input the **BCR (§6)** needs, and the **average price** the **TAM (§7)** requires.
+- **Produces:** the **price** (cost item #1 in §4), the input the **BCR (§6)** needs, and the **average price** (or the per-tier prices to size-weight) the **TAM (§7)** requires.
 
 ---
 
@@ -455,12 +455,18 @@ The **TAM** (a.k.a. Total Available Market) is *the overall sales opportunity av
 > **Units TAM:**
 > `TAM (units) = (no. customers/Actors in your market) × (no. purchases they can make in one year)`
 >
-> **Under a segmented (tiered) pricing strategy**, use a *good-enough* price:
-> **(1) use the middle price**, **OR (2) calculate the average price** across tiers.
+> **Under a segmented (tiered) pricing strategy where tiers map to segments**, every customer in the TAM buys the tier built for their segment, so sum over the tiers:
+> `TAM ($) = Σ over tiers (no. Actors in the tier's segment × tier price × purchases/year)`
+> Equivalently, use the **size-weighted price** `Σ(segment size × tier price) ÷ Σ(segment size)` as the avg price in the formula above.
+> - **The weights are segment sizes** (the # Actors in each Target Market Profile, §2.4 of the workbook), **not conversion rates**. Weighting by a free-to-paid or tier-conversion mix is the adoption/conversion adjustment that turns TAM into SAM/SOM (see (e)).
+> - Where tiers have different purchase frequencies, keep each tier's own purchases/year inside the sum rather than weighting the price alone.
+>
+> **Fallback (label it):** only when segment sizes are unknown, use a *good-enough* price: **(1) the middle price**, **OR (2) the average price** across tiers, and write "Assumption: middle/average tier price, segment sizes unknown" next to the TAM. The middle price is a fair proxy for a core-heavy Good/Better/Best structure, where the middle tier is the core offer that carries most revenue (§5). It is a poor proxy when a free or cheap tier maps to a large segment: there it overstates TAM by tens of percent, and the simple average by more than 2×. If the large segments sit on the expensive tiers, the error runs the other way.
 
 ### (d) Worked examples (from the decks)
 - **College students:** 207M students × $100 × 1 purchase/yr = **$20.7B/yr revenue = 207M units/yr.**
 - **Salesforce Agentforce:** 2.9M US customer-service reps × 20 conversations/rep/day × 260 workdays = 15.1B conversations/yr × $2.00 = **$30.2B/yr = 15.1B conversations/yr.**
+- **Tiers mapped to segments (illustrative):** 10M Actors in three segments of 6M / 3M / 1M (60% / 30% / 10%) on Free / Premium / Expert tiers at $0 / $60 / $240 per year, 1 purchase/yr. TAM = 6M × $0 + 3M × $60 + 1M × $240 = $0 + $180M + $240M = **$420M/yr**, i.e. 10M × a size-weighted price of **$42/yr**. The middle-price fallback ($60) would give $600M (43% too high) and the simple average ($100) $1.0B (138% too high).
 
 ### (e) Common mistakes / anti-patterns
 - Computing TAM before the last assignment (against the explicit rule).
@@ -468,17 +474,19 @@ The **TAM** (a.k.a. Total Available Market) is *the overall sales opportunity av
 - Forgetting TAM is **annual**, or using a per-week/other period (a weak exemplar reported a "per week" TAM).
 - Using a price in the TAM that **contradicts the actual pricing tiers** (a weak exemplar's TAM used $10/yr while the product priced at $20/yr).
 - Not reconciling the customer count across sections (market-size figures drifting between sections is the single most common exemplar weakness).
-- For segmented pricing, using an arbitrary tier price instead of the middle or average price.
+- For segmented pricing, using an arbitrary tier price, or an unweighted middle/average price when the tiers map to segments of known size. Use the size-weighted price; the middle/average is a labelled fallback for when sizes are unknown.
+- **Weighting the tiers by conversion rates instead of segment sizes** (e.g. "80% stay free, 20% upgrade"). That is a conversion forecast, so the result is SAM/SOM, not TAM.
+- Flagging a correctly size-weighted price as "contradicting the tiers" because it is neither the middle nor the average price. A weighted price lies anywhere between the lowest and highest tier.
 
 ### (f) Coaching questions
 1. How many Actors are in your market (doing the JTBD), and what's your source for that number?
-2. What's the average price of your offering (middle or average tier if segmented), and how many purchases per customer per year?
+2. What's the average price of your offering, and how many purchases per customer per year? If segmented: which segment buys which tier, and how many Actors are in each (size-weight the tier prices; fall back to the middle/average price only if sizes are unknown, and label it)?
 3. Compute TAM both ways — units/year and revenue/year. Do they reconcile with your pricing model?
 4. Are you accidentally applying adoption/market-share % (that's SAM/SOM, not TAM)?
 5. Does the customer count here match the numbers you used in the Market Space and problem sizing?
 
 ### (g) Inputs → Outputs
-- **Consumes:** Market size / no. of Actors (Market Space), average price (Pricing Model §5).
+- **Consumes:** Market size / no. of Actors (Market Space), segment sizes from the Target Market Profiles (for tiered pricing), average or per-tier price (Pricing Model §5).
 - **Produces:** the **Market Opportunity (TAM)** element of the Product Idea Brief; the headline "is this big enough?" number for executives/investors.
 
 ---
