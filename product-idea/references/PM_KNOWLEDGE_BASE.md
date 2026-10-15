@@ -127,7 +127,7 @@ The four Spaces are not four documents — they are four passes over **one produ
 **The single Actor + single JTBD is the trunk.** Everything branches from it. The Actor chosen in Space 1 becomes the primary **User** of the product in Space 3 and the **customer** whose value is proven in Space 4. The JTBD defines the market in Space 2 (everyone doing that job), the competitive set (every option perceived for that job), and the happy path in Space 3 (the job, done through your product).
 
 **The "golden thread" of numbers is the proof of coherence.** The strongest workbooks pick **2–3 core metrics early** — a friction count, a frequency, a wage/value rate — and reuse them *verbatim* across all four Spaces:
-- The **outcome gap** (Space 1) becomes the **customer value** (Space 4).
+- The **part of the outcome gap the product closes** (Space 1 gap, Space 3 MVP) becomes the **customer value** (Space 4). Value is the amount of the gap you reduce, not the whole gap: a product that cuts a 73-min gap by 25 min is worth 25 min.
 - The **problem size** (Space 1) sets up the **TAM** (Space 4) and grounds the **segment sizes** (Space 2).
 - The **root cause** (Space 1) is what the **MVP features** (Space 3) must address and what the **position-to-own** (Space 2) differentiates on.
 - The **desired outcome metric** (Space 1) is the **design/build target** for requirements (Space 3) and the **benefit** quantified in dollars (Space 4).

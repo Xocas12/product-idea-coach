@@ -153,7 +153,7 @@ Slots: `[feature]` = a capability of the MVP; `[benefit]` = the relative change 
 ### (d) Worked examples (from the decks)
 - **Airline passenger, security checkpoint:** Actual 20–25 min → Desired 5 min; product cuts 15–20 min → **Value = "Save 15–20 minutes of time-in-line per trip."**
 - **Rideshare rider (monetary):** Actual $25.44/trip → Desired $13.00; product cuts $12 → **Value = "Save $12.00 per trip."**
-- **Urgent-care patient:** Actual 103 min/visit → Desired 30 min; product cuts 25 min → **Value = "Save 25 minutes of visit time."** (Later monetized: 73 min saved × $33/hr ÷ 60 = **$40.15/visit**.)
+- **Urgent-care patient:** Actual 103 min/visit → Desired 30 min; product cuts 25 min → **Value = "Save 25 minutes of visit time."** (Later monetized on the same 25 min: 25 min saved × $33/hr ÷ 60 = **$13.75/visit**. The other 48 min of the 73-min gap stay open, so they are not part of the value.)
 - **Consumer health app:** Avoid 1 urgent-care visit ($200) + reduce lab tests ($150) = **Total value $350/year.**
 
 ### (e) Common mistakes / anti-patterns
@@ -309,7 +309,7 @@ A **pricing metric** is a **unit to which the price is applied** ("what are you 
    - **Consumer markets: 10–20%** common. **Business markets: 15–30%** common.
    - **High-risk innovation: 1/8 to 1/10** of value.
 
-> **Worked (urgent care):** value = **$40.15/visit** savings → **price ≈ $10/visit (¼ of value).**
+> **Worked (urgent care):** value = **$13.75/visit** (the 25 min the product saves, at $33/hr) → capture 10–30% → **$1.38–$4.13/visit** → a consumer market, so stay in 10–20% → **price ≈ $2.50/visit (~18% of value).**
 > **Worked (consumer health app):** total value $350/yr → apply probability 25% → $87.50 → capture 10–30% → **$8.75–$26/yr** → considering peace-of-mind, set initial price **~$26/yr.**
 
 **1.2 Use a reference price** — find the price of the **next best alternative (competitor)**, then adjust for the value of your **positive and negative points of difference.**
