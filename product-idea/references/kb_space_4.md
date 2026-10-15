@@ -308,6 +308,7 @@ A **pricing metric** is a **unit to which the price is applied** ("what are you 
    - Consider the **probability** the customer actually gets the value (lower probability → closer to 10%).
    - **Consumer markets: 10–20%** common. **Business markets: 15–30%** common.
    - **High-risk innovation: 1/8 to 1/10** of value.
+   - **Check the share against the friction bar before you settle on it.** The share you take as price caps the Benefit-to-Cost Ratio: BCR ≤ value ÷ price = 1/share (§6, "Price-share ceiling"). A ¼ share can never give more than 4:1, so it only leaves room for monetized time or switching costs on a low-friction (3:1) purchase. For higher friction, take the largest share the bar allows (§6 table) or less.
 
 > **Worked (urgent care):** value = **$40.15/visit** savings → **price ≈ $10/visit (¼ of value).**
 > **Worked (consumer health app):** total value $350/yr → apply probability 25% → $87.50 → capture 10–30% → **$8.75–$26/yr** → considering peace-of-mind, set initial price **~$26/yr.**
@@ -355,7 +356,8 @@ Defines **when** and **how** a customer pays (a.k.a. payment terms), whereas the
 - Using a competitor reference price when the competitor uses a *different pricing metric* (breaks the comparison).
 - Segmented tiers that aren't tied to distinct willingness-to-pay/needs, or a core tier that isn't the revenue anchor.
 - Picking a metric misaligned with value or with your costs, or using >2 metrics (confusing).
-- Setting price arbitrarily instead of deriving it (strong exemplars *derived* price as ¼ of estimated per-tier value, then rounded to competitive numbers with each deviation justified).
+- Setting price arbitrarily instead of deriving it (strong exemplars *derived* price as a share of estimated per-tier value, ¼ for low-friction buys, then rounded to competitive numbers with each deviation justified).
+- Taking a share of value that the friction bar cannot survive: at share p the BCR can never exceed 1/p, so ¼ fails every medium-friction purchase once any time cost is monetized (§6, "Price-share ceiling").
 
 ### (f) Coaching questions
 1. Which strategy fits — one price for all, or tiers for different willingness to pay? What's your **core (revenue-anchor) tier**?
@@ -378,15 +380,31 @@ The final judgment of the Space: decide whether the CVP is **compelling** — i.
 
 ### (b) Rules / constraints — BCR thresholds by purchase friction
 
-| Required BCR | Friction level | Characteristics |
-|--------------|----------------|-----------------|
-| **3:1** | **Low friction** | Minutes to decide; low money; low time; little/no switching cost |
-| **4–5:1** | **Medium friction** | Days/weeks to decide; moderate money; some implementation time; switching costs |
-| **6–8:1** | **High friction** | Months to decide; significant money; complex implementation; major switching costs; big consequences to company/career |
-| **10:1** | **Very high friction** | High friction + high benefit uncertainty, long-term consequences, safety risks |
+| Required BCR | Friction level | Characteristics | Largest share of value you can take as price |
+|--------------|----------------|-----------------|----------------------------------------------|
+| **3:1** | **Low friction** | Minutes to decide; low money; low time; little/no switching cost | 33% (1/3) |
+| **4–5:1** | **Medium friction** | Days/weeks to decide; moderate money; some implementation time; switching costs | 25% at 4:1, 20% at 5:1 |
+| **6–8:1** | **High friction** | Months to decide; significant money; complex implementation; major switching costs; big consequences to company/career | 16.7% at 6:1, 12.5% at 8:1 |
+| **10:1** | **Very high friction** | High friction + high benefit uncertainty, long-term consequences, safety risks | 10% |
+
+The last column is the ceiling with **no** monetized non-price cost. Every dollar of monetized time, switching or setup cost lowers it further (see "Price-share ceiling" below).
 
 - **BCR = total Customer Value ÷ total Customer Costs.** The ratio must **clear the bar for its friction level** — a 4:1 offer is compelling for a low-friction buy but *not* for a very-high-friction one.
 - **Emotional benefits can drive a high BCR** — customers acquire products that make them *feel better* (recognition, accomplishment, belonging, self-expression, purpose, security, reduced complexity). Look for strong signals: customers talk positively, spread the word, use emotional language.
+
+### Price-share ceiling: the price caps the BCR
+Price is cost item #1, and with one value basis (the same annual value V for pricing and for the BCR) the share of value you take as price fixes the most the BCR can ever be. Write the price as **P = p × V** (p = the share captured) and the monetized non-price costs as **C**, all on the same annual basis:
+
+> **BCR = V ÷ (P + C) = 1 ÷ (p + C/V) ≤ V ÷ P = 1/p**
+
+- The BCR equals 1/p only when the non-price costs are listed but not monetized (C = 0). Once any of them is monetized, the BCR is strictly below 1/p.
+- **To clear a bar of T:1 the share must satisfy p ≤ 1/T − C/V.** With C = 0 that is the last column of the table above.
+- What follows from it: the 10–30% rule only reaches 10:1 at exactly 10% with nothing monetized; the business-market range (15–30%) tops out at 6.67:1, so a value-priced business product cannot reach 8:1 or 10:1 without a share below 15%; and **"capture ~¼" fits low friction only** — at 4:1 it leaves no room at all for a monetized time cost.
+- Check this when you set the price (§5), not after. If the share the market expects does not fit the friction bar, pull a lever (lower price, cut other costs, raise benefits) or use a reference price instead. Do not drop time costs or downgrade the friction level to make the ratio pass.
+
+> **Worked (team scheduling tool, medium friction, monetized time cost):** value V = **$2,400/user/yr** (time saved). First-year non-price cost: onboarding 115 min × $25/hr = **$47.92**, so C/V = 2.0%. Target the top of the medium bar, 5:1: p ≤ 1/5 − 0.020 = **18.0%**, a price of at most $432.
+> - Capture ¼ → price **$600** → BCR = 2,400 ÷ (600 + 47.92) = **3.70:1** → fails even 4:1.
+> - Capture 15% (bottom of the business range) → price **$360/user/yr** → BCR = 2,400 ÷ (360 + 47.92) = **5.88:1** → clears 5:1 → **compelling** for a medium-friction purchase.
 
 ### Levers if the CVP is NOT compelling
 1. **Increase the benefits** (add features, better design/experience).
@@ -548,7 +566,7 @@ Three sample opening paragraphs for **"PM Genie, an AI-powered copilot for produ
 **Strong (do this):**
 - **Golden-thread consistency.** The best workbooks pick 2–3 core numbers early (e.g., 8→4 steps, $32/hr wage, 40 units/yr) and **reuse them verbatim** across benefits, value, pricing, and TAM so the whole Space reconciles as one argument.
 - **Benefits tied to the outcome gap and quantified in both time and dollars,** using **conservative, sourced assumptions** (a strong exemplar carried one dollar figure — $1,664/yr and 68 hrs saved — verbatim, explicitly lower-bound → credible ROI).
-- **Value-based pricing done properly:** estimate per-tier perceived value, capture ~¼ (within the 10–30% rule), round to competitive prices, and **justify every deviation** (several strong exemplars).
+- **Value-based pricing done properly:** estimate per-tier perceived value, capture ~¼ for a low-friction buy and no more than the friction bar allows otherwise (§6: share ≤ 1/T − C/V, i.e. below ¼ at 4:1, at most 1/5 at 5:1, 1/6 to 1/8 at high friction, 1/10 at very high), round to competitive prices, and **justify every deviation** (several strong exemplars).
 - **Costs treated as full TCO,** including time/effort and switching, with time monetized (a strong exemplar costed 115 min of onboarding at $25/hr = $47.92).
 - **Segmented tiers mapped 1:1 to willingness-to-pay,** each tier's contents justified (a strong exemplar used free-for-students / premium-for-workers / live-expert-for-elderly tiers).
 - **A BCR (or explicit value ratio) matched to friction,** with named levers if weak.
@@ -562,4 +580,4 @@ Three sample opening paragraphs for **"PM Genie, an AI-powered copilot for produ
 - **Costs = price only,** ignoring time/switching, or folding a complement's full cost into the envelope (a weak exemplar included a whole third-party IDE license).
 - **A brief (or narrative) written as marketing hype** ("beacon of innovation," "paradigm shift") instead of concrete, numbered, executive-ready prose.
 
-**The one-line test:** a strong Customer Value Space lets a skeptical executive trace a single, consistent set of numbers from the *outcome gap* → *quantified benefits* → *value* → *price (≈10–30% of value)* → *BCR that clears its friction threshold* → *annual TAM* → *a two-page jargon-free brief* — with every figure reconciling to the ones before it.
+**The one-line test:** a strong Customer Value Space lets a skeptical executive trace a single, consistent set of numbers from the *outcome gap* → *quantified benefits* → *value* → *price (≈10–30% of value, and no more than 1/T − C/V for friction bar T)* → *BCR that clears its friction threshold* → *annual TAM* → *a two-page jargon-free brief* — with every figure reconciling to the ones before it.
